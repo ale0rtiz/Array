@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    float temperaturaF[7];
+    float temperaturaC[7];
+    
+    for(int i=0; i<7; i++){
+        printf("ingrese la temperatura en F: ", i + 1);
+        scanf("%f", &temperaturaF[i]);
+        
+        temperaturaC[i]=(temperaturaF[i]-32)*5/9;
+    }
+    for(int i=0; i<7; i++){
+        printf("La temperatura del dia %d en Celsius es: %.2f \n", i +i, temperaturaC[i]);
+    }
+
+    return 0;
+}
